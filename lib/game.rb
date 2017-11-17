@@ -23,9 +23,7 @@ class Game
     board.turn_count.even? ? player_1 : player_2
   end
 
-  def over?
-    draw? || won?
-  end
+  
 
   def won?
     WIN_COMBINATIONS.detect do |combo|
@@ -37,6 +35,10 @@ class Game
 
   def draw?
     true if board.full? && !won?
+  end
+
+  def over?
+    draw? || won?
   end
 
   def winner
