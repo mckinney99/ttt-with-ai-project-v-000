@@ -23,7 +23,7 @@ class Game
     board.turn_count.even? ? player_1 : player_2
   end
 
-  
+
 
   def won?
     WIN_COMBINATIONS.detect do |combo|
