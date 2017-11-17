@@ -40,7 +40,9 @@ class Game
   end
 
   def winner
-    board.cells[won?[0]] if won?
+    if winning_combo = won?
+      @board.cells[winning_combo.first]
+    end
   end
 
 
