@@ -58,7 +58,7 @@ class Board
   end
 
   def update(user_input, player)
-    @cells[user_input.to_i - 1] = "X"
+    user_input = index.to_i - 1
   end
 
 
