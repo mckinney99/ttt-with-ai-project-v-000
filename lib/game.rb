@@ -57,11 +57,11 @@ class Game
     while !over?
       turn
     end
-    board.display
-    won? ? (puts "Congratulations #{winner}!") : (puts "Cat's Game!")
-    return 0 if draw?
-    return 1 if winner == "X"
-    return 2 if winner == "O"
+    if won?
+      puts "Congratulations #{winner}!"
+    elsif draw?
+      puts "Cat's Game!"
+    end
   end
 
   def start
