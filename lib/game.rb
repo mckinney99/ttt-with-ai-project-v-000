@@ -61,6 +61,7 @@ class Game
     @board.display
     puts "\n\n"
   end
+end
 
   def play
     while !over?
@@ -74,4 +75,4 @@ class Game
   end
 
 end
-end
+
